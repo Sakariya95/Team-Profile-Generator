@@ -1,11 +1,11 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const path = require('path');
-const generateHTML = require('./utils/generateHTML.js');
-const Employee = require('./utils/employee.js');
-const Manager = require('./utils/manager.js');
-const Engineer = require('./utils/engineer.js');
-const Intern = require('./utils/intern.js');
+const generateHTML = require('./lib/generateHTML.js');
+const Employee = require('./libemployee.js');
+const Manager = require('./lib/manager.js');
+const Engineer = require('./lib/engineer.js');
+const Intern = require('./lib/intern.js');
 const managerArray = [];
 const engineerArray = [];
 const internArray = [];
@@ -140,7 +140,7 @@ function createTeam() {
       createIntern();
     } else {
       fs.writeFileSync(
-        path.join(__dirname, '/dist/team.html'),
+        path.join(__dirname, '/__dist__/team-profile.html'),
         generateHTML(managerArray, engineerArray, internArray),
         'utf-8'
       );
