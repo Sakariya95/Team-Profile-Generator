@@ -1,8 +1,8 @@
-# Team-Profile-Generator
+
 # Team Profile Generator
 
-![ExampleScreenshot](/__dist__/screenshots/screenshoot-npm-passed.png)
-![ExampleScreenshot](/__dist__/screenshots/HTML_Screenshot.png)
+![ExampleScreenshot](/screenshoot-npm-passed.png)
+![ExampleScreenshot](/HTML_Screenshot.png)
 
 ## Table of Contents
 
